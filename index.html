@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Header */
+        .header {
+          font-family: serif;
+          font-size: 80px;
+          height: auto;
+          margin-top: 15px;
+          margin-bottom: 10px;
+          padding-bottom: 0;
+          text-align: center;
+          position: sticky;
+          top: 0;
+          background-color: white;
+          z-index: 1000;
+          border-bottom:1px solid rgba(198, 195, 195, 0.516);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+        /* Navbar */
+        .topnav {
+            background-color: white;
+            overflow: hidden;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.162);
+            margin-bottom: 30px;
+        }
+
+        .topnav a, .dropdown {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            font-family: Helvetica, sans-serif;
+            font-weight: 500;
+            padding: 14px 16px;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        /* Hover effect */
+        .topnav a:hover {
+            border-bottom: 2px solid black;
+        }
+
+        .dropdownbtn {
+            color: black;
+            text-align: center;
+            font-family: Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            margin-top: 11px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.162);
+        }
+
+        .dropdown-content a {
+            color: grey;
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Body Layout */
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+            width: 25%;
+            height: 300px;
+            margin:0 30px;
+            box-shadow: 0 4px 8px rgba(0, 0.160, 0.160, 0.160);
+        }
+
+        .column {
+            width: 50%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0.160, 0.160, 0.160);
+        }
+
+        .topic {
+            margin-bottom: 30px;
+            text-align: center;
+            scroll-margin-top: 100px;
+
+        }
+
+        /* Images */
+        .container {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover; /* Cover ensures the image covers the div */
+            object-position: center; /* Center the image */
+        }
+
+        /* text content */
+
+        .Description{
+          text-align:center;
+          font-family:sans-serif;
+          font-size:large;
+          font-weight:300;
+          font-style:bold;
+        }
+
+        .Author{
+          text-align:center;
+          font-style:italic;
+          font-weight:200
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- TITLE AND NAVIGATION BAR -->
+    <h1 class="header">VOGUE</h1>
+    <div class="topnav">
+        <a href="#Fashion">FASHION</a>
+        <a href="#Living">LIVING</a>
+        <a href="#Culture">CULTURE</a>
+        <a>WEDDINGS</a>
+        <a>RUNWAY</a>
+        <div class="dropdown">
+            <button class="dropdownbtn">SHOPPING <span class="arrow">&#x25BC;</span></button>
+            <div class="dropdown-content">
+                <a>Clothing</a>
+                <a>Bags & Shoes</a>
+                <a>More</a>
+            </div>
+        </div>
+        <a>CONTACT</a>
+        <a>ABOUT</a>
+    </div>
+
+    <!-- FASHION -------------------------------------------------------------------------------------------------------------------------- -->
+    <h1 class="topic">FASHION</h1>
+    <div class="row" id="Fashion">
+        <div class="sidebar">
+            <div class="container">
+                <img src="D:\uni\IWP\resources\L1.webp" alt="Left Sidebar Image">
+                <p class="Description">Simone Biles Wins the Gold Medal—And Her Necklace Proves She’s a GOAT</p>
+                <p class="Author">By Christian Allaire</p>
+            </div>
+             <div class="container" style="margin-top:30px;">
+                <img src="D:\uni\IWP\resources\L1B.webp" alt="Left Sidebar Image">
+                <p class="Description">Can I, a Non–Sports Fan, Pull Off a Stylish Jersey?</p>
+                <p class="Author">By Christian Allaire</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <img src="D:\uni\IWP\resources\main.webp" alt="Main Column Image">
+            </div>
+                <p class="Description" style="font-size:x-large">How Kamala Harris Is Dressing for the Campaign Trail</p>
+                <p class="Author">By Hannah Jackson</p>
+        </div>
+        <div class="sidebar">
+            <div class="container">
+                <img src="D:\uni\IWP\resources\R1.webp" alt="Right Sidebar Image">
+                <p class="Description">Ugh, Blake Lively Stole My Dream Wedding Dress</p>
+                <p class="Author">By Margaux Anbouba</p>
+
+            </div>
+            <div class="container" style="margin-top:30px;">
+              <img src="D:\uni\IWP\resources\R1B.webp" alt="Left Sidebar Image">
+              <p class="Description">How Rose Forde Is Ushering in a New Era of Hollywood Style</p>
+              <p class="Author">By Christian Allaire</p>
+          </div>
+        </div>
+    </div>
+
+  <!-- LIVING -------------------------------------------------------------------------------------------------------------------------- -->
+    <h1 class="topic" style="margin-top:60px">LIVING</h1>
+    <div class="row" id="Living">
+      <div class="sidebar">
+        <div class="container">
+            <img src="D:\uni\IWP\resources\L2A.webp" alt="Left Sidebar Image">
+            <p class="Description">Inside Christian Louboutin’s Glamorous First Hotel In A Hidden Corner Of Portugal</p>
+            <p class="Author">  By Radhika Seth</p>
+        </div>
+         <div class="container" style="margin-top:30px;">
+            <img src="D:\uni\IWP\resources\L2B.webp" alt="Left Sidebar Image">
+            <p class="Description">The Best Airbnbs in Miami, From South Beach to Coral Gables</p>
+            <p class="Author">By Elise Taylor and Nicole Kliest</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="container">
+            <img src="D:\uni\IWP\resources\main2.webp" alt="Main Column Image">
+        </div>
+            <p class="Description" style="font-size:x-large">The Best Hotels in the Hamptons</p>
+            <p class="Author">By Elise Taylor</p>
+    </div>
+    <div class="sidebar">
+        <div class="container">
+            <img src="D:\uni\IWP\resources\R2A.webp" alt="Right Sidebar Image">
+            <p class="Description">Forget the Balearics—Now Is the Perfect Time to Visit Spain’s Costa Brava</p>
+            <p class="Author">By Siobhan Reid</p>
+        </div>
+        <div class="container" style="margin-top:30px;">
+          <img src="D:\uni\IWP\resources\R2B.webp" alt="Left Sidebar Image">
+          <p class="Description">The Vogue Editors’ Guide to Los Angeles</p>
+          <p class="Author">By Vogue</p>
+      </div>
+    </div>
+    </div>
+
+    <!-- CULTURE -------------------------------------------------------------------------------------------------------------------------- -->
+      <h1 class="topic" style="margin-top:60px">CULTURE</h1>
+      <div class="row" id="Culture">
+        <div class="sidebar">
+          <div class="container">
+              <img src="D:\uni\IWP\resources\L3A.webp" alt="Left Sidebar Image">
+              <p class="Description">The True Story of the Dog Who Found His Long-Lost Son</p>
+              <p class="Author"> By Mattie Kahn</p>
+          </div>
+           <div class="container" style="margin-top:30px;">
+              <img src="D:\uni\IWP\resources\L3B.webp" alt="Left Sidebar Image">
+              <p class="Description">Why Is Everyone Saying ‘Demure’ All of a Sudden?</p>
+              <p class="Author">By Emma Specter</p>
+          </div>
+      </div>
+      <div class="column">
+          <div class="container">
+              <img src="D:\uni\IWP\resources\main3.webp" alt="Main Column Image">
+          </div>
+              <p class="Description" style="font-size:x-large">The Mad Genius of Gena Rowlands in Two Defining Performances</p>
+              <p class="Author">By Erik Morse</p>
+      </div>
+      <div class="sidebar">
+          <div class="container">
+              <img src="D:\uni\IWP\resources\R3A.webp" alt="Right Sidebar Image">
+              <p class="Description">What Trump Is Doing When He Mispronounces “Kamala”</p>
+              <p class="Author">By Mekita Rivas</p>
+          </div>
+          <div class="container" style="margin-top:30px;">
+            <img src="D:\uni\IWP\resources\R3B.webp" alt="Left Sidebar Image">
+            <p class="Description">Racing Driver Nerea Martí on Gender Inequalities in Motorsports: ‘It’s Still a Difficult World’</p>
+            <p class="Author">By Konstanze Popp and Valerie Specht</p>
+        </div>
+      </div>
+   </div>
+
+
+      <!-- SMOOTH NAVIGATION ANIMATION -->
+      <script>
+        document.querySelectorAll('.topnav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const offset = 200; // Adjust this value as needed
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.scrollY - offset;
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.onbeforeunload = function () {
+          window.scrollTo(0, 0);
+        };
+    </script>
+</body>
+</html>
